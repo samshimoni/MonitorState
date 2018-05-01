@@ -23,11 +23,11 @@ def start_tool():
     else:
 
         ProtecTool.Create_Linux()
+
         while 1 :
-            ProtecTool.HackerRemovedFolder("MonitorState.{645ff040-5081-101b-9f08-00aa002f954e}")
+            ProtecTool.HackerRemovedFolder("MonitorState")
             ProcessList.WriteCsv()
             time.sleep(x*60)
-
 
 
 

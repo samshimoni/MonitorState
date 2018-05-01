@@ -1,5 +1,5 @@
 import datetime
-import  sys
+import sys
 import Scanner
 import StatusLog
 import platform
@@ -35,7 +35,7 @@ def WriteCsv():
         lastProc = RLScanner()
         StatusLog.WriteLogFile(list, lastProc, currentDate)
         with open("MonitorState/processList.csv", 'ab') as ocsv:
-            bufferWriter = csv.writer(ocsv, delimeter=' ')
+            bufferWriter = csv.writer(ocsv, delimiter=',')
             for proc in list:
                 bufferWriter.writerow([proc.pid, proc.name, currentDate])
     else:
